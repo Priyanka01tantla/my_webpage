@@ -1,108 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
-    <!-- Makes the website responsive on phones/tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Personal Website</title>
+    <meta name="description"
+        content="Academic website of Priyanka Yadav - Researcher in Computational Biophysics, Molecular Simulations and Machine Learning.">
 
-    <!-- Optional: Link to your CSS file -->
+    <meta name="author" content="Priyanka Yadav">
+
+    <title>Priyanka Yadav | Computational Biophysics Researcher</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header>
-        <nav class="navbar">
+    <!-- =====================================================
+                         NAVIGATION
+    ====================================================== -->
 
-            <div class="logo">
-                My Website
-            </div>
+    <header class="navbar">
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="nav-container">
 
-        </nav>
+            <a href="#home" class="logo">
+                Priyanka Yadav
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#research">Research</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#publications">Publications</a>
+                    </li>
+
+                    <li>
+                        <a href="#cv">CV</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
     </header>
 
 
-    <!-- ================= HOME / HERO ================= -->
+
+    <!-- =====================================================
+                         HERO SECTION
+    ====================================================== -->
+
     <section id="home" class="hero">
 
-        <div class="hero-content">
+        <div class="hero-container">
 
-            <h1>Hello, I'm Your Name</h1>
+            <div class="hero-text">
 
-            <p>
-                Researcher | Computational Biophysics | Molecular Simulations
-            </p>
-
-            <a href="#research" class="button">
-                Explore My Research
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a researcher interested in molecular simulations,
-            computational biophysics, and machine learning.
-            My work focuses on understanding biomolecular dynamics
-            using computational approaches.
-        </p>
-
-    </section>
-
-
-    <!-- ================= RESEARCH ================= -->
-    <section id="research">
-
-        <h2>Research</h2>
-
-        <div class="research-container">
-
-            <div class="research-card">
-                <h3>RNA Dynamics</h3>
-
-                <p>
-                    Studying RNA conformational dynamics and folding
-                    using molecular dynamics simulations.
+                <p class="eyebrow">
+                    Computational Biophysics • Molecular Simulations • Machine Learning
                 </p>
+
+                <h1>
+                    Priyanka Yadav
+                </h1>
+
+                <h2>
+                    PhD Researcher in Computational Biophysics
+                </h2>
+
+                <p class="hero-description">
+
+                    I investigate the conformational dynamics and molecular
+                    interactions of complex biomolecular systems using
+                    molecular simulations, enhanced sampling, and
+                    machine-learning approaches.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#research" class="button primary">
+                        Explore My Research
+                    </a>
+
+                    <a href="#contact" class="button secondary">
+                        Get in Touch
+                    </a>
+
+                </div>
+
             </div>
 
 
-            <div class="research-card">
-                <h3>DNA Dynamics</h3>
+            <!-- Profile Photo -->
 
-                <p>
-                    Investigating DNA structures, topology, and
-                    interactions with proteins.
-                </p>
-            </div>
+            <div class="hero-image">
 
+                <img
+                    src="images/profile.jpg"
+                    alt="Priyanka Yadav">
 
-            <div class="research-card">
-                <h3>Protein Simulations</h3>
-
-                <p>
-                    Exploring protein conformational dynamics and
-                    interactions with small molecules.
-                </p>
             </div>
 
         </div>
@@ -110,74 +138,794 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects">
 
-        <h2>Projects</h2>
+    <!-- =====================================================
+                         ABOUT SECTION
+    ====================================================== -->
 
-        <div class="project">
+    <section id="about" class="section">
 
-            <h3>Project 1</h3>
+        <div class="container">
 
-            <p>
-                Description of your research project goes here.
-            </p>
+            <div class="section-heading">
 
-            <a href="#" class="button">
-                View Project
-            </a>
+                <span>ABOUT ME</span>
 
-        </div>
+                <h2>
+                    Exploring biomolecular dynamics through computation
+                </h2>
+
+            </div>
 
 
-        <div class="project">
+            <div class="about-grid">
 
-            <h3>Project 2</h3>
+                <div class="about-text">
 
-            <p>
-                Description of another research project goes here.
-            </p>
+                    <p>
+                        I am a PhD researcher in the Department of Biotechnology
+                        at the Indian Institute of Technology Hyderabad, working
+                        in the area of computational biophysics and molecular
+                        simulations.
+                    </p>
 
-            <a href="#" class="button">
-                View Project
-            </a>
+                    <p>
+                        My research focuses on understanding how biomolecules
+                        explore their conformational landscapes and interact
+                        with other molecules. I use molecular dynamics,
+                        enhanced sampling, and multiscale computational
+                        approaches to investigate these processes.
+                    </p>
+
+                    <p>
+                        I am particularly interested in combining molecular
+                        simulations with machine learning to improve sampling,
+                        develop molecular models, and extract biologically
+                        meaningful information from complex simulation data.
+                    </p>
+
+                </div>
+
+
+                <div class="about-details">
+
+                    <div class="detail-item">
+
+                        <strong>Current Position</strong>
+
+                        <span>
+                            PhD Researcher
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <strong>Department</strong>
+
+                        <span>
+                            Department of Biotechnology
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <strong>Institution</strong>
+
+                        <span>
+                            IIT Hyderabad
+                        </span>
+
+                    </div>
+
+
+                    <div class="detail-item">
+
+                        <strong>Research Area</strong>
+
+                        <span>
+                            Computational Biophysics
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
-    <section id="contact">
 
-        <h2>Contact</h2>
+    <!-- =====================================================
+                     RESEARCH INTERESTS
+    ====================================================== -->
 
-        <p>
-            Email: your.email@example.com
-        </p>
+    <section id="research" class="section research-section">
 
-        <p>
-            LinkedIn: 
-            <a href="#">Your LinkedIn Profile</a>
-        </p>
+        <div class="container">
 
-        <p>
-            Google Scholar:
-            <a href="#">Your Google Scholar Profile</a>
-        </p>
+            <div class="section-heading">
+
+                <span>RESEARCH</span>
+
+                <h2>
+                    Research Interests
+                </h2>
+
+                <p>
+                    My research combines molecular simulations and
+                    data-driven approaches to understand biomolecular
+                    structure, dynamics, and interactions.
+                </p>
+
+            </div>
+
+
+            <div class="research-grid">
+
+
+                <!-- Research 1 -->
+
+                <article class="research-card">
+
+                    <div class="research-number">
+                        01
+                    </div>
+
+                    <h3>
+                        RNA Conformational Dynamics
+                    </h3>
+
+                    <p>
+                        Investigating RNA folding, structural transitions,
+                        conformational landscapes, and interactions with
+                        proteins and small molecules.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Molecular dynamics simulations
+                        </li>
+
+                        <li>
+                            Enhanced sampling
+                        </li>
+
+                        <li>
+                            RNA folding pathways
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+
+                <!-- Research 2 -->
+
+                <article class="research-card">
+
+                    <div class="research-number">
+                        02
+                    </div>
+
+                    <h3>
+                        DNA Structure & Topology
+                    </h3>
+
+                    <p>
+                        Studying the dynamics and topology of unusual DNA
+                        structures and their interactions with DNA-binding
+                        proteins.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Topological DNA structures
+                        </li>
+
+                        <li>
+                            DNA-protein interactions
+                        </li>
+
+                        <li>
+                            Groove dynamics
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+
+                <!-- Research 3 -->
+
+                <article class="research-card">
+
+                    <div class="research-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Protein Dynamics
+                    </h3>
+
+                    <p>
+                        Exploring protein conformational dynamics,
+                        ligand interactions, and molecular mechanisms
+                        using atomistic simulations.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Protein conformational dynamics
+                        </li>
+
+                        <li>
+                            Protein-ligand interactions
+                        </li>
+
+                        <li>
+                            Membrane proteins
+                        </li>
+
+                    </ul>
+
+                </article>
+
+
+
+                <!-- Research 4 -->
+
+                <article class="research-card">
+
+                    <div class="research-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Machine Learning & Molecular Simulation
+                    </h3>
+
+                    <p>
+                        Developing data-driven approaches to improve
+                        molecular simulations and extract meaningful
+                        conformational information.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            ML-assisted molecular simulations
+                        </li>
+
+                        <li>
+                            Force-field development
+                        </li>
+
+                        <li>
+                            Dimensionality reduction
+                        </li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
+
+    <!-- =====================================================
+                         PROJECTS
+    ====================================================== -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>SELECTED WORK</span>
+
+                <h2>
+                    Research Projects
+                </h2>
+
+            </div>
+
+
+            <div class="projects-list">
+
+
+                <!-- Project 1 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="images/rna-project.jpg"
+                            alt="RNA molecular simulation">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            RNA • Molecular Dynamics
+                        </span>
+
+                        <h3>
+                            Conformational Dynamics of G4C2 Repeat RNA
+                        </h3>
+
+                        <p>
+
+                            Investigation of the folding pathways and
+                            force-induced unfolding behavior of
+                            neurodegeneration-associated GGGGCC repeat RNA
+                            using molecular simulations.
+
+                        </p>
+
+                        <a href="#" class="project-link">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Project 2 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="images/protein-project.jpg"
+                            alt="Protein molecular simulation">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Protein • Membrane
+                        </span>
+
+                        <h3>
+                            Ion Permeation Through Nav1.6
+                        </h3>
+
+                        <p>
+
+                            Molecular simulation of ion transport through
+                            the Nav1.6 voltage-gated sodium channel to
+                            investigate structural and dynamic features
+                            associated with ion permeation.
+
+                        </p>
+
+                        <a href="#" class="project-link">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Project 3 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="images/dna-project.jpg"
+                            alt="DNA molecular simulation">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            DNA • Topology
+                        </span>
+
+                        <h3>
+                            Dynamics of Topological DNA Structures
+                        </h3>
+
+                        <p>
+
+                            Computational investigation of unusual DNA
+                            topologies and their structural dynamics,
+                            including changes in DNA groove geometry.
+
+                        </p>
+
+                        <a href="#" class="project-link">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Project 4 -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="images/ml-project.jpg"
+                            alt="Machine learning molecular simulation">
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-tag">
+                            Machine Learning
+                        </span>
+
+                        <h3>
+                            Machine Learning for Molecular Simulations
+                        </h3>
+
+                        <p>
+
+                            Application of machine-learning approaches
+                            to molecular simulation data, including
+                            molecular representation, force-field
+                            parameter prediction, and conformational
+                            analysis.
+
+                        </p>
+
+                        <a href="#" class="project-link">
+                            Learn More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+                       PUBLICATIONS
+    ====================================================== -->
+
+    <section id="publications" class="section publication-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>PUBLICATIONS</span>
+
+                <h2>
+                    Selected Publications
+                </h2>
+
+            </div>
+
+
+            <div class="publication-list">
+
+
+                <!-- Publication 1 -->
+
+                <article class="publication">
+
+                    <span class="publication-year">
+                        2025
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Folding pathways and force-induced unfolding
+                            of neurodegeneration-associated GGGGCC
+                            microsatellite repeat RNA revealed by
+                            molecular simulations
+                        </h3>
+
+                        <p>
+
+                            <strong>
+                                Yadav, P.
+                            </strong>
+                            et al.
+
+                        </p>
+
+                        <p class="journal">
+                            Journal Name, Volume, Pages
+                        </p>
+
+                        <a href="#" class="publication-link">
+                            DOI / Paper →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Publication 2 -->
+
+                <article class="publication">
+
+                    <span class="publication-year">
+                        2025
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Title of your second publication
+                        </h3>
+
+                        <p>
+
+                            Yadav, P. et al.
+
+                        </p>
+
+                        <p class="journal">
+                            Journal Name, Volume, Pages
+                        </p>
+
+                        <a href="#" class="publication-link">
+                            DOI / Paper →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Publication 3 -->
+
+                <article class="publication">
+
+                    <span class="publication-year">
+                        2024
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Title of another research publication
+                        </h3>
+
+                        <p>
+
+                            Yadav, P. et al.
+
+                        </p>
+
+                        <p class="journal">
+                            Journal Name, Volume, Pages
+                        </p>
+
+                        <a href="#" class="publication-link">
+                            DOI / Paper →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="publication-button">
+
+                <a href="#" class="button secondary">
+                    View All Publications
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+                         CV SECTION
+    ====================================================== -->
+
+    <section id="cv" class="cv-section">
+
+        <div class="container cv-container">
+
+            <div>
+
+                <span class="eyebrow">
+                    CURRICULUM VITAE
+                </span>
+
+                <h2>
+                    Interested in my academic background?
+                </h2>
+
+                <p>
+                    Download my CV to learn more about my education,
+                    research experience, publications, technical
+                    expertise, and academic activities.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <a
+                    href="files/Priyanka_Yadav_CV.pdf"
+                    class="button primary"
+                    target="_blank">
+
+                    Download CV
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+                         CONTACT
+    ====================================================== -->
+
+    <section id="contact" class="section contact-section">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span>CONTACT</span>
+
+                <h2>
+                    Let's Connect
+                </h2>
+
+                <p>
+                    I am always interested in discussing research,
+                    collaborations, computational biophysics,
+                    molecular simulations, and machine learning.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        EMAIL
+                    </span>
+
+                    <a href="mailto:your.email@iith.ac.in">
+                        your.email@iith.ac.in
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        GOOGLE SCHOLAR
+                    </span>
+
+                    <a href="#" target="_blank">
+                        Google Scholar
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        ORCID
+                    </span>
+
+                    <a href="#" target="_blank">
+                        ORCID Profile
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span class="contact-label">
+                        LINKEDIN
+                    </span>
+
+                    <a href="#" target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+                         FOOTER
+    ====================================================== -->
+
     <footer>
 
-        <p>
-            © 2026 Your Name. All rights reserved.
-        </p>
+        <div class="container footer-container">
+
+            <p>
+                © 2026 Priyanka Yadav
+            </p>
+
+            <p>
+                Computational Biophysics • Molecular Simulations • Machine Learning
+            </p>
+
+        </div>
 
     </footer>
 
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
