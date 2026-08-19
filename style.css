@@ -323,22 +323,21 @@ ul {
 
 .hero-image img {
     width: 360px;
-
     height: 360px;
 
-    object-fit: cover;
+    object-fit: contain;
 
     border-radius: 50%;
 
     position: relative;
-
     z-index: 1;
 
     border: 8px solid white;
 
+    background: var(--background-light);
+
     box-shadow: var(--shadow-hover);
 }
-
 
 
 /* =========================================================
