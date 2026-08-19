@@ -292,31 +292,14 @@ ul {
 
 .hero-image {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Blue circle behind the photo */
-.hero-image::before {
-    content: "";
-    position: absolute;
-
-    width: 385px;
-    height: 385px;
-
-    border: 1px solid rgba(79, 124, 172, 0.30);
-    border-radius: 50%;
-
-    transform: translate(18px, 18px);
-
-    z-index: 0;
-}
-
-/* Main photo */
 .hero-image img {
     width: 360px;
     height: 360px;
@@ -325,7 +308,7 @@ ul {
     object-position: center 42%;
 
     border-radius: 50%;
-    border: 8px solid #fff;
+    border: 8px solid white;
 
     position: relative;
     z-index: 1;
