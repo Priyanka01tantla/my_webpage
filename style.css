@@ -299,36 +299,41 @@ ul {
     justify-content: center;
 }
 
-/* Outer decorative circle */
+/* Smaller blue decorative circle */
 .hero-image::before {
     content: "";
     position: absolute;
-    width: 390px;
-    height: 390px;
+
+    width: 350px;
+    height: 350px;
+
     border: 1px solid rgba(79, 124, 172, 0.35);
     border-radius: 50%;
-    transform: translate(20px, 20px);
+
+    /* smaller offset */
+    transform: translate(15px, 15px);
+
     z-index: 0;
 }
 
-/* Photo */
+/* Main photo */
 .hero-image img {
     width: 360px;
     height: 360px;
 
-    /* Keeps the photo nicely cropped inside the circle */
     object-fit: cover;
     object-position: center 42%;
 
     border-radius: 50%;
-    border: 8px solid #fff;
+    border: 8px solid white;
 
     position: relative;
     z-index: 1;
 
     box-sizing: border-box;
-    box-shadow: var(--shadow-hover);
     display: block;
+
+    box-shadow: var(--shadow-hover);
 }
 
 
