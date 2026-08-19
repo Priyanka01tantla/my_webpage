@@ -292,8 +292,8 @@ ul {
 
 .hero-image {
     position: relative;
-    width: 220px;
-    height: 220px;
+    width: 240px;
+    height: 240px;
 
     display: flex;
     align-items: center;
@@ -301,8 +301,8 @@ ul {
 }
 
 .hero-image img {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
 
     object-fit: cover;
     object-position: center 42%;
