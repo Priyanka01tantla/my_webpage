@@ -292,26 +292,26 @@ ul {
 
 .hero-image {
     position: relative;
-    width: 390px;
-    height: 390px;
+    width: 400px;
+    height: 400px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Smaller blue decorative circle */
+/* Blue circle behind the photo */
 .hero-image::before {
     content: "";
     position: absolute;
 
-    width: 350px;
-    height: 350px;
+    width: 385px;
+    height: 385px;
 
-    border: 1px solid rgba(79, 124, 172, 0.35);
+    border: 1px solid rgba(79, 124, 172, 0.30);
     border-radius: 50%;
 
-    /* smaller offset */
-    transform: translate(15px, 15px);
+    transform: translate(18px, 18px);
 
     z-index: 0;
 }
@@ -325,7 +325,7 @@ ul {
     object-position: center 42%;
 
     border-radius: 50%;
-    border: 8px solid white;
+    border: 8px solid #fff;
 
     position: relative;
     z-index: 1;
