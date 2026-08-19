@@ -292,8 +292,8 @@ ul {
 
 .hero-image {
     position: relative;
-    width: 380px;
-    height: 380px;
+    width: 250px;
+    height: 250px;
 
     display: flex;
     align-items: center;
@@ -301,14 +301,14 @@ ul {
 }
 
 .hero-image img {
-    width: 360px;
-    height: 360px;
+    width: 220px;
+    height: 220px;
 
     object-fit: cover;
     object-position: center 42%;
 
     border-radius: 50%;
-    border: 8px solid white;
+    border: 6px solid white;
 
     position: relative;
     z-index: 1;
@@ -318,7 +318,6 @@ ul {
 
     box-shadow: var(--shadow-hover);
 }
-
 
 /* =========================================================
    BUTTONS
