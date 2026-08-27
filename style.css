@@ -1275,3 +1275,81 @@ footer p {
     }
 
 }
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 35px;
+    align-items: start;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 12px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.contact-link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 1;
+    width: 45px;
+    height: 45px;
+}
+
+.contact-icon-link i {
+    font-size: 32px;
+}
+
+.contact-icon-link:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+}
