@@ -1347,6 +1347,64 @@ footer p {
 }
 
 
+/* =====================================================
+   INTERNSHIPS
+===================================================== */
+
+.internship-list {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin-top: 40px;
+}
+
+.internship {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.internship-period {
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.internship-content h3 {
+    margin: 0 0 5px;
+    font-size: 1.25rem;
+}
+
+.internship-location {
+    margin: 0 0 15px;
+    font-size: 0.9rem;
+}
+
+.internship-title {
+    margin-bottom: 10px;
+}
+
+.internship-content p {
+    line-height: 1.7;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .internship {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .internship-period {
+        font-size: 0.8rem;
+    }
+
+}
+
 /* Mobile */
 
 @media (max-width: 600px) {
@@ -1365,5 +1423,3 @@ footer p {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
-}
